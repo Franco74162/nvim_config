@@ -21,10 +21,13 @@ return {
             ensure_installed = {
                 "lua_ls",
                 "rust_analyzer",
+                "jsonls",
             },
         })
         mason_tool_installer.setup({
-            ensure_installed = {},
+            ensure_installed = {
+                "fixjson", -- json format
+            },
         })
     end,
 }
