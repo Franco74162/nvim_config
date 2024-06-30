@@ -19,6 +19,7 @@ return {
             dashboard.button("f", "", "<cmd>Telescope find_files<cr>"),
             dashboard.button("t", "", "<cmd>TodoTelescope<cr>"),
             dashboard.button("r", "", "<cmd>SessionRestore<cr>"),
+            dashboard.button("e", "", "<cmd>NvimTreeToggle<cr>"),
         }
         alpha.setup(dashboard.opts)
         vim.cmd([[autocmd FileType alpha setlocal nofoldenable]])
